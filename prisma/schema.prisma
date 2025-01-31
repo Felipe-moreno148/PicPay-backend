@@ -14,4 +14,3 @@ model User {
   password   String
   CPF        string
 }
-
