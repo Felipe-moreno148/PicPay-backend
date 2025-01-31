@@ -12,5 +12,13 @@ model User {
   email      String   @unique
   name       String
   password   String
-  CPF        string
+  CPF        string   @unique
+}
+
+model Empresa {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  email      String   @unique
+  name       String
+  password   String
+  CNPJ       string   @unique
 }
