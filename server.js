@@ -8,4 +8,4 @@ app.use(express.json());
 app.use("/", PublicRoutes);
 app.use("/", PrivateRoutes);
 
-app.listen(8080, () => console.log("Servidor no ar 🚀 "));
+app.listen(8888, () => console.log("Servidor no ar 🚀 "));
