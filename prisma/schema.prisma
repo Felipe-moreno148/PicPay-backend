@@ -8,17 +8,17 @@ generator client {
 }
 
 model User {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
   email      String   @unique
   name       String
   password   String
-  CPF        string   @unique
+  cpf        Int      @unique
 }
 
 model Empresa {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
   email      String   @unique
   name       String
   password   String
-  CNPJ       string   @unique
+  cnpj       Int      @unique
 }
