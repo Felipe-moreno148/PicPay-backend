@@ -1,11 +1,11 @@
-import express from 'express'
-import PublicRoutes from "./routes/public.js";
-import PrivateRoutes from "./routes/private.js";
+import express from "express";
+import publicRoutes from "./routes/public.js";
+import privateRoutes from "./routes/private.js";
 
 const app = express();
 app.use(express.json());
 
-app.use("/", PublicRoutes);
-app.use("/", PrivateRoutes);
+app.use("/", publicRoutes);
+app.use("/", privateRoutes);
 
-app.listen(8888, () => console.log("Servidor no ar 🚀 "));
+app.listen(3000, () => console.log("Servidor no ar 🚀"));
